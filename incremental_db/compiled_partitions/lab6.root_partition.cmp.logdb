@@ -1,0 +1,6 @@
+v1
+DSP_BALANCING_IMPLEMENTATION,DSP_BLOCKS,riscv:processor|mul_unit:mul_unit_block|mul:multiplier|lpm_mult:Mult0|mult_86t:auto_generated|mac_out2,
+DSP_BALANCING_IMPLEMENTATION,DSP_BLOCKS,riscv:processor|mul_unit:mul_unit_block|mul:multiplier|lpm_mult:Mult0|mult_86t:auto_generated|mac_out4,
+DSP_BALANCING_IMPLEMENTATION,DSP_BLOCKS,riscv:processor|mul_unit:mul_unit_block|mul:multiplier|lpm_mult:Mult0|mult_86t:auto_generated|mac_out6,
+DSP_BALANCING_IMPLEMENTATION,DSP_BLOCKS,riscv:processor|mul_unit:mul_unit_block|mul:multiplier|lpm_mult:Mult0|mult_86t:auto_generated|mac_out8,
+PORT_SWAPPING,PORT_SWAP_TYPE_DSPMULT,riscv:processor|mul_unit:mul_unit_block|mul:multiplier|lpm_mult:Mult0|mult_86t:auto_generated|mac_mult5,

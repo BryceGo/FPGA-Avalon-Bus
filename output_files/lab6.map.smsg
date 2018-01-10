@@ -1,0 +1,3 @@
+Warning (10268): Verilog HDL information at quickdiv.sv(84): always construct contains both blocking and non-blocking assignments
+Warning (10268): Verilog HDL information at csr_unit.sv(492): always construct contains both blocking and non-blocking assignments
+Warning (10268): Verilog HDL information at csr_unit.sv(537): always construct contains both blocking and non-blocking assignments

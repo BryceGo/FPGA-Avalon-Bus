@@ -1,0 +1,14 @@
+
+State Machine - |lab6|riscv:processor|bitops_unit:bitops_unit_block|PS
+Name PS.done PS.bitoperations PS.hold PS.rdy 
+PS.rdy 0 0 0 0 
+PS.hold 0 0 1 1 
+PS.bitoperations 0 1 0 1 
+PS.done 1 0 0 1 
+
+State Machine - |lab6|riscv:processor|load_store_unit:load_store_unit_block|avalon_master:avalon_bus|PS
+Name PS.dataack PS.dataout PS.datain PS.rdy 
+PS.rdy 0 0 0 0 
+PS.datain 0 0 1 1 
+PS.dataout 0 1 0 1 
+PS.dataack 1 0 0 1 

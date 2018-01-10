@@ -1,0 +1,327 @@
+Partition Merge report for lab6
+Sat Apr 01 21:22:21 2017
+Quartus II 64-Bit Version 15.0.0 Build 145 04/22/2015 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Partition Merge Summary
+  3. Partition Merge Netlist Types Used
+  4. Partition Merge Partition Statistics
+  5. Partition Merge Partition Pin Processing
+  6. Partition Merge Resource Usage Summary
+  7. Partition Merge RAM Summary
+  8. Partition Merge DSP Block Usage Summary
+  9. Partition Merge Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2015 Altera Corporation. All rights reserved.
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, the Altera Quartus II License Agreement,
+the Altera MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Altera and sold by Altera or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
+
+
+
++---------------------------------------------------------------------------------+
+; Partition Merge Summary                                                         ;
++------------------------------------+--------------------------------------------+
+; Partition Merge Status             ; Successful - Sat Apr 01 21:22:21 2017      ;
+; Quartus II 64-Bit Version          ; 15.0.0 Build 145 04/22/2015 SJ Web Edition ;
+; Revision Name                      ; lab6                                       ;
+; Top-level Entity Name              ; lab6                                       ;
+; Family                             ; Cyclone IV E                               ;
+; Total logic elements               ; 7,560                                      ;
+;     Total combinational functions  ; 5,348                                      ;
+;     Dedicated logic registers      ; 3,403                                      ;
+; Total registers                    ; 3403                                       ;
+; Total pins                         ; 5                                          ;
+; Total virtual pins                 ; 0                                          ;
+; Total memory bits                  ; 314,880                                    ;
+; Embedded Multiplier 9-bit elements ; 8                                          ;
+; Total PLLs                         ; 0                                          ;
++------------------------------------+--------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------+
+; Partition Merge Netlist Types Used                                                                                            ;
++--------------------------------+----------------+-------------------+------------------------+--------------------------------+
+; Partition Name                 ; Partition Type ; Netlist Type Used ; Netlist Type Requested ; Partition Contents             ;
++--------------------------------+----------------+-------------------+------------------------+--------------------------------+
+; Top                            ; User-created   ; Source File       ; Source File            ;                                ;
+; sld_hub:auto_hub               ; Auto-generated ; Post-Synthesis    ; Post-Synthesis         ; sld_hub:auto_hub               ;
+; hard_block:auto_generated_inst ; Auto-generated ; Source File       ; Source File            ; hard_block:auto_generated_inst ;
++--------------------------------+----------------+-------------------+------------------------+--------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------+
+; Partition Merge Partition Statistics                                                                     ;
++---------------------------------------------+--------+------------------+--------------------------------+
+; Statistic                                   ; Top    ; sld_hub:auto_hub ; hard_block:auto_generated_inst ;
++---------------------------------------------+--------+------------------+--------------------------------+
+; Estimated Total logic elements              ; 7425   ; 135              ; 0                              ;
+;                                             ;        ;                  ;                                ;
+; Total combinational functions               ; 5229   ; 119              ; 0                              ;
+; Logic element usage by number of LUT inputs ;        ;                  ;                                ;
+;     -- 4 input functions                    ; 3342   ; 54               ; 0                              ;
+;     -- 3 input functions                    ; 1405   ; 25               ; 0                              ;
+;     -- <=2 input functions                  ; 482    ; 40               ; 0                              ;
+;                                             ;        ;                  ;                                ;
+; Logic elements by mode                      ;        ;                  ;                                ;
+;     -- normal mode                          ; 4649   ; 111              ; 0                              ;
+;     -- arithmetic mode                      ; 580    ; 8                ; 0                              ;
+;                                             ;        ;                  ;                                ;
+; Total registers                             ; 3328   ; 75               ; 0                              ;
+;     -- Dedicated logic registers            ; 3328   ; 75               ; 0                              ;
+;     -- I/O registers                        ; 0      ; 0                ; 0                              ;
+;                                             ;        ;                  ;                                ;
+; Virtual pins                                ; 0      ; 0                ; 0                              ;
+; I/O pins                                    ; 5      ; 0                ; 0                              ;
+; Embedded Multiplier 9-bit elements          ; 8      ; 0                ; 0                              ;
+; Total memory bits                           ; 314880 ; 0                ; 0                              ;
+; Total RAM block bits                        ; 0      ; 0                ; 0                              ;
+; JTAG                                        ; 1      ; 0                ; 0                              ;
+;                                             ;        ;                  ;                                ;
+; Connections                                 ;        ;                  ;                                ;
+;     -- Input Connections                    ; 112    ; 109              ; 0                              ;
+;     -- Registered Input Connections         ; 63     ; 85               ; 0                              ;
+;     -- Output Connections                   ; 142    ; 79               ; 0                              ;
+;     -- Registered Output Connections        ; 1      ; 78               ; 0                              ;
+;                                             ;        ;                  ;                                ;
+; Internal Connections                        ;        ;                  ;                                ;
+;     -- Total Connections                    ; 31151  ; 683              ; 0                              ;
+;     -- Registered Connections               ; 9085   ; 480              ; 0                              ;
+;                                             ;        ;                  ;                                ;
+; External Connections                        ;        ;                  ;                                ;
+;     -- Top                                  ; 68     ; 186              ; 0                              ;
+;     -- sld_hub:auto_hub                     ; 186    ; 2                ; 0                              ;
+;     -- hard_block:auto_generated_inst       ; 0      ; 0                ; 0                              ;
+;                                             ;        ;                  ;                                ;
+; Partition Interface                         ;        ;                  ;                                ;
+;     -- Input Ports                          ; 32     ; 35               ; 0                              ;
+;     -- Output Ports                         ; 4      ; 53               ; 0                              ;
+;     -- Bidir Ports                          ; 0      ; 0                ; 0                              ;
+;                                             ;        ;                  ;                                ;
+; Registered Ports                            ;        ;                  ;                                ;
+;     -- Registered Input Ports               ; 0      ; 3                ; 0                              ;
+;     -- Registered Output Ports              ; 0      ; 19               ; 0                              ;
+;                                             ;        ;                  ;                                ;
+; Port Connectivity                           ;        ;                  ;                                ;
+;     -- Input Ports driven by GND            ; 0      ; 1                ; 0                              ;
+;     -- Output Ports driven by GND           ; 0      ; 28               ; 0                              ;
+;     -- Input Ports driven by VCC            ; 0      ; 0                ; 0                              ;
+;     -- Output Ports driven by VCC           ; 0      ; 0                ; 0                              ;
+;     -- Input Ports with no Source           ; 0      ; 24               ; 0                              ;
+;     -- Output Ports with no Source          ; 0      ; 0                ; 0                              ;
+;     -- Input Ports with no Fanout           ; 0      ; 29               ; 0                              ;
+;     -- Output Ports with no Fanout          ; 0      ; 44               ; 0                              ;
++---------------------------------------------+--------+------------------+--------------------------------+
+Note: Resource usage numbers presented for Partitions containing post-synthesis logic are estimates.  For Partitions containing post-fit logic, resource usage numbers are accurate based on previous placement information.  Actual Fitter results may vary depending on current Fitter Preservation Level assignments.
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------+
+; Partition Merge Partition Pin Processing                                                                                                   ;
++---------------------------------------------------------------------------------------+-----------+---------------+----------+-------------+
+; Name                                                                                  ; Partition ; Type          ; Location ; Status      ;
++---------------------------------------------------------------------------------------+-----------+---------------+----------+-------------+
+; CLOCK_50                                                                              ; Top       ; Input Port    ; n/a      ;             ;
+;     -- CLOCK_50                                                                       ; Top       ; Input Pad     ; Unplaced ; Synthesized ;
+;     -- CLOCK_50~input                                                                 ; Top       ; Input Buffer  ; Unplaced ; Synthesized ;
+;                                                                                       ;           ;               ;          ;             ;
+; KEY[0]                                                                                ; Top       ; Input Port    ; n/a      ;             ;
+;     -- KEY[0]                                                                         ; Top       ; Input Pad     ; Unplaced ; Synthesized ;
+;     -- KEY[0]~input                                                                   ; Top       ; Input Buffer  ; Unplaced ; Synthesized ;
+;                                                                                       ;           ;               ;          ;             ;
+; KEY[1]                                                                                ; Top       ; Input Port    ; n/a      ;             ;
+;     -- KEY[1]                                                                         ; Top       ; Input Pad     ; Unplaced ; Synthesized ;
+;     -- KEY[1]~input                                                                   ; Top       ; Input Buffer  ; Unplaced ; Synthesized ;
+;                                                                                       ;           ;               ;          ;             ;
+; KEY[2]                                                                                ; Top       ; Input Port    ; n/a      ;             ;
+;     -- KEY[2]                                                                         ; Top       ; Input Pad     ; Unplaced ; Synthesized ;
+;     -- KEY[2]~input                                                                   ; Top       ; Input Buffer  ; Unplaced ; Synthesized ;
+;                                                                                       ;           ;               ;          ;             ;
+; KEY[3]                                                                                ; Top       ; Input Port    ; n/a      ;             ;
+;     -- KEY[3]                                                                         ; Top       ; Input Pad     ; Unplaced ; Synthesized ;
+;     -- KEY[3]~input                                                                   ; Top       ; Input Buffer  ; Unplaced ; Synthesized ;
+;                                                                                       ;           ;               ;          ;             ;
+; altera_reserved_tck                                                                   ; Top       ; Input Port    ; n/a      ;             ;
+;     -- altera_reserved_tck                                                            ; Top       ; Input Pad     ; Unplaced ; Synthesized ;
+;     -- altera_reserved_tck~input                                                      ; Top       ; Input Buffer  ; Unplaced ; Synthesized ;
+;                                                                                       ;           ;               ;          ;             ;
+; altera_reserved_tdi                                                                   ; Top       ; Input Port    ; n/a      ;             ;
+;     -- altera_reserved_tdi                                                            ; Top       ; Input Pad     ; Unplaced ; Synthesized ;
+;     -- altera_reserved_tdi~input                                                      ; Top       ; Input Buffer  ; Unplaced ; Synthesized ;
+;                                                                                       ;           ;               ;          ;             ;
+; altera_reserved_tdo                                                                   ; Top       ; Output Port   ; n/a      ;             ;
+;     -- altera_reserved_tdo                                                            ; Top       ; Output Pad    ; Unplaced ; Synthesized ;
+;     -- altera_reserved_tdo~output                                                     ; Top       ; Output Buffer ; Unplaced ; Synthesized ;
+;                                                                                       ;           ;               ;          ;             ;
+; altera_reserved_tms                                                                   ; Top       ; Input Port    ; n/a      ;             ;
+;     -- altera_reserved_tms                                                            ; Top       ; Input Pad     ; Unplaced ; Synthesized ;
+;     -- altera_reserved_tms~input                                                      ; Top       ; Input Buffer  ; Unplaced ; Synthesized ;
+;                                                                                       ;           ;               ;          ;             ;
+; jtag.bp.jtag_uart_0_auto_gen_jtag_uart_0_alt_jtag_atlantic_inst_ep_fabric_receive_0_  ; Top       ; Input Port    ; n/a      ;             ;
+;                                                                                       ;           ;               ;          ;             ;
+; jtag.bp.jtag_uart_0_auto_gen_jtag_uart_0_alt_jtag_atlantic_inst_ep_fabric_receive_10_ ; Top       ; Input Port    ; n/a      ;             ;
+;                                                                                       ;           ;               ;          ;             ;
+; jtag.bp.jtag_uart_0_auto_gen_jtag_uart_0_alt_jtag_atlantic_inst_ep_fabric_receive_11_ ; Top       ; Input Port    ; n/a      ;             ;
+;                                                                                       ;           ;               ;          ;             ;
+; jtag.bp.jtag_uart_0_auto_gen_jtag_uart_0_alt_jtag_atlantic_inst_ep_fabric_receive_12_ ; Top       ; Input Port    ; n/a      ;             ;
+;                                                                                       ;           ;               ;          ;             ;
+; jtag.bp.jtag_uart_0_auto_gen_jtag_uart_0_alt_jtag_atlantic_inst_ep_fabric_receive_13_ ; Top       ; Input Port    ; n/a      ;             ;
+;                                                                                       ;           ;               ;          ;             ;
+; jtag.bp.jtag_uart_0_auto_gen_jtag_uart_0_alt_jtag_atlantic_inst_ep_fabric_receive_14_ ; Top       ; Input Port    ; n/a      ;             ;
+;                                                                                       ;           ;               ;          ;             ;
+; jtag.bp.jtag_uart_0_auto_gen_jtag_uart_0_alt_jtag_atlantic_inst_ep_fabric_receive_15_ ; Top       ; Input Port    ; n/a      ;             ;
+;                                                                                       ;           ;               ;          ;             ;
+; jtag.bp.jtag_uart_0_auto_gen_jtag_uart_0_alt_jtag_atlantic_inst_ep_fabric_receive_16_ ; Top       ; Input Port    ; n/a      ;             ;
+;                                                                                       ;           ;               ;          ;             ;
+; jtag.bp.jtag_uart_0_auto_gen_jtag_uart_0_alt_jtag_atlantic_inst_ep_fabric_receive_17_ ; Top       ; Input Port    ; n/a      ;             ;
+;                                                                                       ;           ;               ;          ;             ;
+; jtag.bp.jtag_uart_0_auto_gen_jtag_uart_0_alt_jtag_atlantic_inst_ep_fabric_receive_18_ ; Top       ; Input Port    ; n/a      ;             ;
+;                                                                                       ;           ;               ;          ;             ;
+; jtag.bp.jtag_uart_0_auto_gen_jtag_uart_0_alt_jtag_atlantic_inst_ep_fabric_receive_19_ ; Top       ; Input Port    ; n/a      ;             ;
+;                                                                                       ;           ;               ;          ;             ;
+; jtag.bp.jtag_uart_0_auto_gen_jtag_uart_0_alt_jtag_atlantic_inst_ep_fabric_receive_1_  ; Top       ; Input Port    ; n/a      ;             ;
+;                                                                                       ;           ;               ;          ;             ;
+; jtag.bp.jtag_uart_0_auto_gen_jtag_uart_0_alt_jtag_atlantic_inst_ep_fabric_receive_20_ ; Top       ; Input Port    ; n/a      ;             ;
+;                                                                                       ;           ;               ;          ;             ;
+; jtag.bp.jtag_uart_0_auto_gen_jtag_uart_0_alt_jtag_atlantic_inst_ep_fabric_receive_21_ ; Top       ; Input Port    ; n/a      ;             ;
+;                                                                                       ;           ;               ;          ;             ;
+; jtag.bp.jtag_uart_0_auto_gen_jtag_uart_0_alt_jtag_atlantic_inst_ep_fabric_receive_22_ ; Top       ; Input Port    ; n/a      ;             ;
+;                                                                                       ;           ;               ;          ;             ;
+; jtag.bp.jtag_uart_0_auto_gen_jtag_uart_0_alt_jtag_atlantic_inst_ep_fabric_receive_23_ ; Top       ; Input Port    ; n/a      ;             ;
+;                                                                                       ;           ;               ;          ;             ;
+; jtag.bp.jtag_uart_0_auto_gen_jtag_uart_0_alt_jtag_atlantic_inst_ep_fabric_receive_2_  ; Top       ; Input Port    ; n/a      ;             ;
+;                                                                                       ;           ;               ;          ;             ;
+; jtag.bp.jtag_uart_0_auto_gen_jtag_uart_0_alt_jtag_atlantic_inst_ep_fabric_receive_3_  ; Top       ; Input Port    ; n/a      ;             ;
+;                                                                                       ;           ;               ;          ;             ;
+; jtag.bp.jtag_uart_0_auto_gen_jtag_uart_0_alt_jtag_atlantic_inst_ep_fabric_receive_4_  ; Top       ; Input Port    ; n/a      ;             ;
+;                                                                                       ;           ;               ;          ;             ;
+; jtag.bp.jtag_uart_0_auto_gen_jtag_uart_0_alt_jtag_atlantic_inst_ep_fabric_receive_5_  ; Top       ; Input Port    ; n/a      ;             ;
+;                                                                                       ;           ;               ;          ;             ;
+; jtag.bp.jtag_uart_0_auto_gen_jtag_uart_0_alt_jtag_atlantic_inst_ep_fabric_receive_6_  ; Top       ; Input Port    ; n/a      ;             ;
+;                                                                                       ;           ;               ;          ;             ;
+; jtag.bp.jtag_uart_0_auto_gen_jtag_uart_0_alt_jtag_atlantic_inst_ep_fabric_receive_7_  ; Top       ; Input Port    ; n/a      ;             ;
+;                                                                                       ;           ;               ;          ;             ;
+; jtag.bp.jtag_uart_0_auto_gen_jtag_uart_0_alt_jtag_atlantic_inst_ep_fabric_receive_8_  ; Top       ; Input Port    ; n/a      ;             ;
+;                                                                                       ;           ;               ;          ;             ;
+; jtag.bp.jtag_uart_0_auto_gen_jtag_uart_0_alt_jtag_atlantic_inst_ep_fabric_receive_9_  ; Top       ; Input Port    ; n/a      ;             ;
+;                                                                                       ;           ;               ;          ;             ;
+; jtag.bp.jtag_uart_0_auto_gen_jtag_uart_0_alt_jtag_atlantic_inst_ep_fabric_send_0_     ; Top       ; Output Port   ; n/a      ;             ;
+;                                                                                       ;           ;               ;          ;             ;
+; jtag.bp.jtag_uart_0_auto_gen_jtag_uart_0_alt_jtag_atlantic_inst_ep_fabric_send_1_     ; Top       ; Output Port   ; n/a      ;             ;
+;                                                                                       ;           ;               ;          ;             ;
+; jtag.bp.jtag_uart_0_auto_gen_jtag_uart_0_alt_jtag_atlantic_inst_ep_fabric_send_2_     ; Top       ; Output Port   ; n/a      ;             ;
+;                                                                                       ;           ;               ;          ;             ;
++---------------------------------------------------------------------------------------+-----------+---------------+----------+-------------+
+
+
++--------------------------------------------------------------+
+; Partition Merge Resource Usage Summary                       ;
++---------------------------------------------+----------------+
+; Resource                                    ; Usage          ;
++---------------------------------------------+----------------+
+; Estimated Total logic elements              ; 7,560          ;
+;                                             ;                ;
+; Total combinational functions               ; 5348           ;
+; Logic element usage by number of LUT inputs ;                ;
+;     -- 4 input functions                    ; 3396           ;
+;     -- 3 input functions                    ; 1430           ;
+;     -- <=2 input functions                  ; 522            ;
+;                                             ;                ;
+; Logic elements by mode                      ;                ;
+;     -- normal mode                          ; 4760           ;
+;     -- arithmetic mode                      ; 588            ;
+;                                             ;                ;
+; Total registers                             ; 3403           ;
+;     -- Dedicated logic registers            ; 3403           ;
+;     -- I/O registers                        ; 0              ;
+;                                             ;                ;
+; I/O pins                                    ; 5              ;
+; Total memory bits                           ; 314880         ;
+;                                             ;                ;
+; Embedded Multiplier 9-bit elements          ; 8              ;
+;                                             ;                ;
+; Maximum fan-out node                        ; CLOCK_50~input ;
+; Maximum fan-out                             ; 3389           ;
+; Total fan-out                               ; 31461          ;
+; Average fan-out                             ; 3.55           ;
++---------------------------------------------+----------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Partition Merge RAM Summary                                                                                                                                                                                                                                                                                                                                                   ;
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+--------+------------------------------------------------------+
+; Name                                                                                                                                                                                                                    ; Type ; Mode             ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Size   ; MIF                                                  ;
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+--------+------------------------------------------------------+
+; auto_gen_jtag_uart_0:jtag_uart_0|auto_gen_jtag_uart_0_scfifo_w:the_auto_gen_jtag_uart_0_scfifo_w|scfifo:wfifo|scfifo_jr21:auto_generated|a_dpfifo_q131:dpfifo|dpram_nl21:FIFOram|altsyncram_r1m1:altsyncram1|ALTSYNCRAM ; AUTO ; Simple Dual Port ; 64           ; 8            ; 64           ; 8            ; 512    ; None                                                 ;
+; byte_en_BRAM:inst_data_ram|altera_byte_enable_ram:ram_block|altsyncram:ram_rtl_0|altsyncram_1u32:auto_generated|ALTSYNCRAM                                                                                              ; AUTO ; True Dual Port   ; 8192         ; 32           ; 8192         ; 32           ; 262144 ; db/lab6.ram0_altera_byte_enable_ram_c7d210d8.hdl.mif ;
+; riscv:processor|branch_table:bt_block|altsyncram:branch_table_addr_ram_rtl_0|altsyncram_sql1:auto_generated|ALTSYNCRAM                                                                                                  ; AUTO ; Simple Dual Port ; 1024         ; 32           ; 1024         ; 32           ; 32768  ; db/lab6.ram1_branch_table_159b169a.hdl.mif           ;
+; riscv:processor|branch_table:bt_block|altsyncram:branch_table_tag_ram_rtl_0|altsyncram_pql1:auto_generated|ALTSYNCRAM                                                                                                   ; AUTO ; Simple Dual Port ; 1024         ; 22           ; 1024         ; 22           ; 22528  ; db/lab6.ram0_branch_table_159b169a.hdl.mif           ;
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+--------+------------------------------------------------------+
+
+
++-----------------------------------------------------+
+; Partition Merge DSP Block Usage Summary             ;
++---------------------------------------+-------------+
+; Statistic                             ; Number Used ;
++---------------------------------------+-------------+
+; Simple Multipliers (9-bit)            ; 0           ;
+; Simple Multipliers (18-bit)           ; 4           ;
+; Embedded Multiplier Blocks            ; --          ;
+; Embedded Multiplier 9-bit elements    ; 8           ;
+; Signed Embedded Multipliers           ; 1           ;
+; Unsigned Embedded Multipliers         ; 1           ;
+; Mixed Sign Embedded Multipliers       ; 2           ;
+; Variable Sign Embedded Multipliers    ; 0           ;
+; Dedicated Input Shift Register Chains ; 0           ;
++---------------------------------------+-------------+
+Note: number of Embedded Multiplier Blocks used is only available after a successful fit.
+
+
++--------------------------+
+; Partition Merge Messages ;
++--------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit Partition Merge
+    Info: Version 15.0.0 Build 145 04/22/2015 SJ Web Edition
+    Info: Processing started: Sat Apr 01 21:22:20 2017
+Info: Command: quartus_cdb --read_settings_files=off --write_settings_files=off lab6 -c lab6 --merge=on
+Info (35007): Using synthesis netlist for partition "Top"
+Info (35007): Using synthesis netlist for partition "sld_hub:auto_hub"
+Info (35002): Resolved and merged 2 partition(s)
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Warning (21074): Design contains 3 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "KEY[1]"
+    Warning (15610): No output dependent on input pin "KEY[2]"
+    Warning (15610): No output dependent on input pin "KEY[3]"
+Info (21057): Implemented 8141 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 8 input pins
+    Info (21059): Implemented 1 output pins
+    Info (21061): Implemented 8032 logic cells
+    Info (21064): Implemented 91 RAM segments
+    Info (21062): Implemented 8 DSP elements
+Info: Quartus II 64-Bit Partition Merge was successful. 0 errors, 4 warnings
+    Info: Peak virtual memory: 643 megabytes
+    Info: Processing ended: Sat Apr 01 21:22:21 2017
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
+
+
